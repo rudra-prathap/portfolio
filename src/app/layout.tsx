@@ -33,7 +33,7 @@ const jetbrainsMono = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rudraprathap.dev"),
-  title: "Panjam Rudra Prathap — Full Stack Developer",
+  title: "Rudra | Portfolio",
   description:
     "Personal portfolio of Panjam Rudra Prathap — Computer Science Engineer, Full Stack Developer, and Network Engineer.",
   keywords: [
@@ -46,24 +46,24 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Panjam Rudra Prathap" }],
   openGraph: {
-    title: "Panjam Rudra Prathap — Full Stack Developer",
+    title: "Rudra | Portfolio",
     description:
       "Computer Science Engineering student with hands-on experience in network engineering, web development, and database management.",
     url: "https://rudraprathap.dev",
-    siteName: "Panjam Rudra Prathap Portfolio",
+    siteName: "Rudra Prathap Portfolio",
     images: [
       {
         url: "/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Panjam Rudra Prathap — Full Stack Developer",
+        alt: "Rudra | Portfolio",
       },
     ],
     locale: "en_US",
     type: "website",
   },
   icons: {
-    icon: "/portrait-bust.webp",
+    icon: " ",
   },
 };
 
