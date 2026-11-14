@@ -155,7 +155,6 @@ export const Hero: React.FC = () => {
             }}
           >
             <source src="/hero/hero.webm" type="video/webm" />
-            <source src="/hero/hero.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
