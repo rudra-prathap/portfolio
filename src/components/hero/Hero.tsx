@@ -160,49 +160,52 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Floating Sound Control Button */}
+      
+      {/* Floating Sound Control Button */}
       <div className="absolute right-6 sm:right-12 bottom-36 sm:bottom-40 z-20">
-        <div className="relative flex items-center justify-center">
-          {/* Soft ping ring when audio is muted / blocked */}
-          {isMuted && (
-            <span
-              className="absolute inset-0 rounded-full animate-ping opacity-35 bg-[#0d0d0d] pointer-events-none"
-              style={{ animationDuration: "2s" }}
+        <button
+          onClick={toggleSound}
+          className="w-[46px] h-[46px] rounded-full bg-[#0d0d0d] text-white flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-105 active:scale-95"
+          aria-label={isMuted ? "Unmute introduction video voice" : "Mute introduction video voice"}
+        >
+          {isMuted ? (
+            // Muted speaker icon
+            <svg
+              width="21"
+              height="21"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               aria-hidden="true"
-            />
+            >
+              <path d="M11 5 6 9H3v6h3l5 4V5Z" />
+              <path d="m16 9 5 6" />
+              <path d="m21 9-5 6" />
+            </svg>
+          ) : (
+            // Sound on speaker icon
+            <svg
+              width="21"
+              height="21"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M11 5 6 9H3v6h3l5 4V5Z" />
+              <path d="M15.5 8.5a5 5 0 0 1 0 7" />
+              <path d="M19 5a10 10 0 0 1 0 14" />
+            </svg>
           )}
-          <button
-            onClick={toggleSound}
-            className="relative w-[46px] h-[46px] rounded-full bg-[#0d0d0d] text-white flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-105 active:scale-95"
-            aria-label={isMuted ? "Unmute introduction video voice" : "Mute introduction video voice"}
-          >
-            {isMuted ? (
-              // Triangle Play icon
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="ml-0.5"
-                aria-hidden="true"
-              >
-                <polygon points="5 3 19 12 5 21 5 3" />
-              </svg>
-            ) : (
-              // Two Bars Pause icon
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <rect x="6" y="4" width="4" height="16" rx="1" />
-                <rect x="14" y="4" width="4" height="16" rx="1" />
-              </svg>
-            )}
-          </button>
-        </div>
+        </button>
       </div>
+
 
       {/* Bottom Content: Role Heading & CTAs */}
       <div className="relative z-10 w-full site-container flex flex-col md:flex-row items-center justify-between gap-6 pt-4">
