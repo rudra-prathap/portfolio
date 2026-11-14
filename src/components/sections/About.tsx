@@ -112,6 +112,17 @@ export const About: React.FC = () => {
                   <span className="font-mono">↗</span>
                 </a>
               )}
+              {PROFILE.github && (
+                <a
+                  href={PROFILE.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-pill-secondary text-xs"
+                >
+                  <span>Github</span>
+                  <span className="font-mono">↗</span>
+                </a>
+              )}
             </div>
           </div>
 

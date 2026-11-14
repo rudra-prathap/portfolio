@@ -119,6 +119,24 @@ export const Contact: React.FC = () => {
               </div>
             )}
 
+            {/* GitHub */}
+            {PROFILE.github && (
+              <div>
+                <span className="text-[#77756f] block mb-2 uppercase tracking-wider">
+                  Code & Projects
+                </span>
+                <a
+                  href={PROFILE.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base font-semibold text-[#0d0d0d] hover:underline flex items-center gap-1.5"
+                >
+                  <span>GitHub Profile</span>
+                  <span className="text-sm">↗</span>
+                </a>
+              </div>
+            )}
+
             {/* Location */}
             <div>
               <span className="text-[#77756f] block mb-2 uppercase tracking-wider">

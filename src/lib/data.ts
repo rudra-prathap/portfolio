@@ -102,7 +102,7 @@ export const PROFILE: Profile = {
     "Computer Science Engineering student with hands-on experience in network engineering, web development, and database management. Skilled in Java, SQL, HTML, CSS, and Networking technologies including TCP/IP, routing, and switching. Experienced in designing network simulations and developing web-based management systems. Passionate about building efficient technological solutions and continuously improving technical expertise.",
   shortLine:
     "Passionate about building efficient technological solutions and continuously improving technical expertise.",
-  github: null, // Omitted: not present in résumé
+  github: "https://github.com/rudra-prathap",
   linkedin: "https://www.linkedin.com/in/rudra-prathap-342632334",
   linkedinDisplay: "linkedin.com/in/rudraprathap",
   resumePath: "/resume.pdf",
@@ -357,7 +357,7 @@ export const PROJECTS: Project[] = [
       "Departmental tracking with multi-category asset audits",
     ],
     tech: ["HTML", "CSS", "JavaScript", "SQL"],
-    github: null, // Omitted: not present in résumé
+    github: "https://github.com/rudra-prathap", // Omitted: not present in résumé
     award: "Best Final Year Project – 2025, Govt. Polytechnic College",
   },
   {
@@ -375,7 +375,7 @@ export const PROJECTS: Project[] = [
       "Network security fundamentals & access control validation",
     ],
     tech: ["Cisco Packet Tracer", "Wireshark", "TCP/IP", "Routing & Switching"],
-    github: null, // Omitted: not present in résumé
+    github: "https://github.com/rudra-prathap",  
     award: "Skill Development & Knowledge Program in Network Engineering (2024)",
   },
 ];
